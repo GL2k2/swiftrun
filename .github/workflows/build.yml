@@ -6,6 +6,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: 🏗 Checkout repository
         uses: actions/checkout@v4
@@ -31,8 +33,11 @@ jobs:
           chmod +x gradlew
           ./gradlew assembleRelease
 
+      - name: 🔍 List APK files (Debug)
+        run: ls -R android/app/build/outputs/apk/
+
       - name: 📤 Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: SwiftRun-Release-APK
-          path: android/app/build/outputs/apk/release/app-release-unsigned.apk
+          name: SwiftRun-APK
+          path: android/app/build/outputs/apk/release/*.apk
