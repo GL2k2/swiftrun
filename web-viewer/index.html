@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftRun Live - Seguimiento en Vivo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="map"></div>
+    
+    <div class="overlay">
+        <div class="header">
+            <div class="live-indicator">
+                <span class="dot"></span> EN VIVO
+            </div>
+            <h1>SwiftRun Live Tracker</h1>
+        </div>
+
+        <div class="stats-panel">
+            <div class="stat">
+                <span class="label">DISTANCIA</span>
+                <span id="distance" class="value">0.00 km</span>
+            </div>
+            <div class="stat">
+                <span class="label">RITMO</span>
+                <span id="pace" class="value">--:--</span>
+            </div>
+            <div class="stat">
+                <span class="label">TIEMPO</span>
+                <span id="time" class="value">00:00</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
