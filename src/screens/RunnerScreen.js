@@ -82,7 +82,7 @@ export default function RunnerScreen() {
 
   const shareLink = async () => {
     if (!runId) return;
-    const link = `https://swiftrun.app/track/${runId}`; // Placeholder link
+    const link = `https://gl2002.es/sr/index.html?runId=${runId}`;
     try {
       await Share.share({
         message: `Sigue mi carrera en vivo en SwiftRun: ${link}`,
