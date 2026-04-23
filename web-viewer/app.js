@@ -3,13 +3,13 @@ import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10
 
 // Credenciales (Placeholder - deben ser actualizadas por el usuario)
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT.firebaseapp.com",
-    databaseURL: "https://YOUR_PROJECT-default-rtdb.firebaseio.com",
-    projectId: "YOUR_PROJECT",
-    storageBucket: "YOUR_PROJECT.appspot.com",
-    messagingSenderId: "YOUR_SENDER_ID",
-    appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyAZ_bruEO5OU2J8QE9jUfVpFYW17Xk5Qpk",
+  authDomain: "swiftrun-a4124.firebaseapp.com",
+  projectId: "swiftrun-a4124",
+  storageBucket: "swiftrun-a4124.firebasestorage.app",
+  messagingSenderId: "161225347224",
+  appId: "1:161225347224:web:98964d927d7575e722c0ed",
+  databaseURL: "https://swiftrun-a4124-default-rtdb.firebaseio.com"
 };
 
 const app = initializeApp(firebaseConfig);
