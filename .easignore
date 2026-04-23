@@ -1,0 +1,12 @@
+node_modules
+.expo
+.eas
+dist
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+web-viewer
+stitch-mcp.ts
+setup_git.sh
+implementation_plan.md
